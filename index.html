@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>dashboard-project</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/lib/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/lib/lobipanel/lobipanel.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/separate/vendor/lobipanel.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/separate/pages/widgets.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/lib/bootstrap-table/bootstrap-table.min.css">
+    <link href="static/css/lib/charts-c3js/c3.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+      <script src="static/js/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="static/js/lib/popper/popper.min.js"></script>
+  <script src="static/js/lib/tether/tether.min.js"></script>
+  <script src="static/js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="static/js/plugins.js"></script>
+
+  <script type="text/javascript" src="static/js/lib/jqueryui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="static/js/lib/match-height/jquery.matchHeight.min.js"></script>
+  <script>
+    $(document).ready(function() {
+            $('.panel').each(function () {
+                try {
+                    $(this).lobiPanel({
+                        sortable: true
+                    }).on('dragged.lobiPanel', function(ev, lobiPanel){
+                        $('.dahsboard-column').matchHeight();
+                    });
+                } catch (err) {}
+            });
+    });
+  </script>
+  <script src="static/js/lib/d3/d3.min.js"></script>
+  <script src="static/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.table-row {
+  margin-bottom: 20px;
+}
+
+.progress {
+  background-color: #119010;
+  height: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+}
+
+.thick-row {
+  min-height: 30px;
+  margin-bottom: 30px;
+}
+
+.nav.nav-pills .nav-item {
+  margin: 0 0 20px 0;
+  background-color: white;
+  padding: 9px;
+  color: #0A0A0A;
+}
+
+.nav.nav-pills .nav-item.active {
+  background-color: #0069d9;
+}
+
+.nav.nav-pills .nav-item.active a {
+  color: #fff;
+}
+
+.row.duration-row {
+  padding-left: calc(100% - 250px);
+}
